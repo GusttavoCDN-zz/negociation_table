@@ -1,0 +1,11 @@
+// * Arquivo de Configuração padrão do Typescript, necessario para que seja feita compilação dos arquivos TS para JS legivel pelo navegador!
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "outDir": "dist/js",
+        "noEmitOnError": true,
+    },
+    "include": [
+        "app/**/*"
+    ]
+}
