@@ -1,19 +1,18 @@
 export class Negociation {
-
   // * O modificador private, impede em run time que o valor seja alterado.
-  private _data;
-  private _quantity;
-  private _value;
+  private date: Date;
+  private _quantity: number;
+  private _value: number;
 
-  constructor(data, quantity, value) {
-    this._data = data;
+  constructor(data: Date, quantity: number, value: number) {
+    this.date = data;
     this._quantity = quantity;
     this._value = value;
   }
 
   // * Getters me permitem ler o valor de campos privados!
   get data() {
-    return this._data;
+    return this.date;
   }
 
   get quantity() {
@@ -23,5 +22,4 @@ export class Negociation {
   get value() {
     return this._value;
   }
-
 }

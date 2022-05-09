@@ -4,6 +4,7 @@
         "target": "es2020",
         "outDir": "dist/js",
         "noEmitOnError": true,
+        "noImplicitAny": true,
     },
     "include": [
         "app/**/*"
