@@ -1,4 +1,6 @@
 // * Arquivo de Configuração padrão do Typescript, necessario para que seja feita compilação dos arquivos TS para JS legivel pelo navegador!
+
+// * Propriedade noImplicitAny serve para não permitir que o código seja compilado sem que os tipos sejam atribuidos
 {
     "compilerOptions": {
         "target": "es2020",

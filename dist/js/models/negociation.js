@@ -1,12 +1,12 @@
 export class Negociation {
     constructor(data, quantity, value) {
-        this.date = data;
+        this._date = data;
         this._quantity = quantity;
         this._value = value;
     }
     // * Getters me permitem ler o valor de campos privados!
     get data() {
-        return this.date;
+        return this._date;
     }
     get quantity() {
         return this._quantity;
