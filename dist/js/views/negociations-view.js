@@ -1,7 +1,7 @@
-export class NegociationsView {
-    constructor(selector) {
-        this.element = document.querySelector(selector);
-    }
+import { View } from './view.js';
+export class NegociationsView extends View {
+    // * Template para criar de formas dinamicas uma tabela com dados de Negociação.
+    // * Utilizando InnerHTMl foi possivel fazer de forma declariva, inspirado no React
     template(model) {
         return `
       <table class="table table-hover table-bordered">
