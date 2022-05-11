@@ -6,7 +6,7 @@ import { WeekDays } from '../enums/weekDays.js';
 export class NegociationController {
     constructor() {
         this.negociations = new Negociations;
-        this.negociationsView = new NegociationsView('#negociations-view');
+        this.negociationsView = new NegociationsView('#negociations-view', true);
         this.viewMessage = new viewMessage('#mensagemView');
         this.inputDate = document.querySelector('#data');
         this.inputQuantity = document.querySelector('#quantidade');
@@ -27,7 +27,7 @@ export class NegociationController {
         return date.getDay() > WeekDays.DOMINGO && date.getDay() < WeekDays.SABAD0;
     }
     createNegociation() {
-        const exp = /-/g; // * Regex para encontrar todos os - na data.
+        const exp = /-/g;
         const date = new Date(this.inputDate.value.replace(exp, ','));
         const quantity = parseInt(this.inputQuantity.value);
         const value = parseFloat(this.inputValue.value);

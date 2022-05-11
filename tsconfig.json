@@ -3,10 +3,12 @@
 // * Propriedade noImplicitAny serve para não permitir que o código seja compilado sem que os tipos sejam atribuidos
 {
     "compilerOptions": {
-        "target": "es2020",
+        "target": "ESNext",
         "outDir": "dist/js",
         "noEmitOnError": true,
         "noImplicitAny": true,
+        "removeComments": true,
+        "strictNullChecks": true,
     },
     "include": [
         "app/**/*"
